@@ -4,13 +4,13 @@ pipeline {
     stage('Build'){
       steps {
         build 'PES1UG22CS309-1'
-        sh 'g++ task_5.cpp -o task_5'
+        sh 'g++ task5.cpp -o task5'
       }
 
     }
     stage('Test'){
       steps {
-        sh './task_5.out'
+        sh './task5.out'
       }
     }
     stage('Deploy'){
